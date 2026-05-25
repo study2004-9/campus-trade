@@ -44,10 +44,6 @@ git --version    → git version 2.54.0 ✅
 - 远程仓库：`git@github.com:study2004-9/campus-trade.git`
 - 连接方式：SSH（443 端口），不依赖 HTTPS
 
-### 5. 上下文压缩踩坑
-- Obsidian 安装包实际已下载完成（282MB），压缩后丢失上下文导致重复下载
-- SSH 公钥在压缩时被替换为错误值，需删除旧 key 重新上传
-- **对策**：每次从压缩恢复后，先 `ls` / 读文件确认实际状态，不凭记忆操作
 
 ## 项目结构
 
@@ -60,6 +56,17 @@ D:\projects\campus-trade\
         ├── java/        ← Java 源代码
         └── resources/   ← 配置文件
 ```
+
+在浏览器里创建远程仓库：
+
+在浏览器中操作（github.com 现在能打开了）：
+
+右上角 + → New repository
+Repository name 填：campus-trade
+Description 随便填或不填
+选 Public（学生不用担心别人看）
+不要勾选 "Add a README file"（你本地已经有了）
+点 Create repository
 
 ## 关键决策
 
